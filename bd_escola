@@ -1,0 +1,14 @@
+create database db_professor;
+use db_professor;
+create table aluno (nome varchar(200), email varchar(200));
+create table disc (nome varchar(200), carga_horaria varchar(200));
+create table prof (nome varchar(200), carga_horaria varchar(200), email varchar(200));
+insert into aluno (nome, email) values (‘Matheus Alves’, ‘matheus@gmail.com’);
+insert into disc (nome, carga_horaria) values (‘Matemática’, ‘300h’);
+insert into prof (nome, carga_horaria, email) values (‘Lúcia’, ‘500h’, ‘lucia@gmail.com’);
+insert into aluno (nome, email) values (‘Camila Pacheco’, ‘camila@gmail.com’);
+insert into disc (nome, carga_horaria) values (‘História’, ‘10h’);
+insert into prof (nome, carga_horaria, email) values (‘Marcia’, ‘20h’, ‘marcia@gmail.com’);
+insert into aluno (nome, email) values (‘Marcelo Martins’, ‘marcelo@gmail.com’);
+insert into disc (nome, carga_horaria) values (‘Biologia’, ‘5h’);
+insert into prof (nome, carga_horaria, email) values (‘Camila’, ‘6h’, ‘camila@gmail.com’);
