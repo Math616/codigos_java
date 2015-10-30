@@ -1,0 +1,26 @@
+/*
+* Faça um programa de cálculo de potência que solicite dois números (n e m)
+* e faça o cálculo de n^m. Repita esse cálculo até o usuário digitar n = 0.
+*/
+
+package cap14;
+import java.util.Scanner;
+public class Potencia {
+    public static void main(String[] args){
+       int base, pot;
+       int res = 1;
+        do{
+            base = JOptionPane.ShowMessageDialog(null,"Digite a base");
+            if(base != 0){
+                pot = JOptionPane.ShowMessageDialog(null,"Digite a potencia");
+                do{
+                    res = res * base;
+                    pot--;    
+                }while(pot > 0);
+                JOptionPane.ShowMessageDialog(null,+res);
+                res = 1;
+            }
+        }while((base != 0));
+        JOptionPane.ShowMessageDialog(null,"Você digitou base = 0. O programa foi finalizado.");
+    }
+}
